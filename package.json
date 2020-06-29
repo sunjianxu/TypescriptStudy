@@ -9,7 +9,7 @@
     "build": "webpack --mode=production --config ./config/webpack.config.js",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "serve":"nodemon start ./server/index.js"
+    "serve": "nodemon start ./server/index.js"
   },
   "author": "",
   "license": "ISC",
@@ -19,7 +19,9 @@
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
     "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
     "nodemon": "^2.0.4",
+    "ts-jest": "^26.1.1",
     "ts-loader": "^7.0.2",
     "typescript": "^3.8.3",
     "vuepress": "^1.5.2",
