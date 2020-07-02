@@ -1,4 +1,4 @@
-/// <reference path="./name.ts" />
+/// <reference path="name.ts" />
 
 console.warn('命名空间');
 // namespace 声明命名空间的关键字
@@ -14,4 +14,4 @@ namespace Lib {
 }
 Lib.sayHello();
 Lib.sayHi();
-Lib.eatApple();
+// Lib.eatApple(); // 编译过后可在全局环境执行
