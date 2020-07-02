@@ -2,10 +2,12 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-    entry: path.join(__dirname, "../src/index.tsx"),
+    entry: {
+        app:path.join(__dirname, "../src/index.tsx")
+    },
     output: {
         path: path.join(__dirname, "../dist"),
-        filename: "main.js"
+        filename: "[name].[chunkhash:8].js"
     },
     resolve: {
         extensions: [".js", ".ts", ".tsx"]
@@ -19,5 +21,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.join(__dirname, "../public/index.html")
         })
-    ]
+    ],
+    optimization: { // 可以将生产的依赖进行拆包打包
+        splitChunks: {
+            chunks: "all"
+        }
+    }
 }

@@ -19,8 +19,7 @@ import ReactDOM from "react-dom";
 // import "./c14"
 // document.getElementById('root').innerHTML = `<div style="color:black;font-size:12px"><center>TypeScript</center></div>`
 
-import Hello from  "./c115";
-
+import Hello from  "./c15";
 ReactDOM.render(
     <Hello name="张丹"/>,
     document.getElementById('root')
