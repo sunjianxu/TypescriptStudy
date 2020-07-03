@@ -54,12 +54,10 @@ const cat_ = new Cat_2('cat_')
 console.log(cat_)
 cat_.seep();
 
-
-
 let animals_: Animals[] = [d1_, cat_]; // 声明类的数组变量
 animals_.forEach(item => {
   item.seep();
-})
+});
 // ts 特殊类型 this 类型,可用于链式操作
 
 
